@@ -26,7 +26,7 @@ echo,Waiting respond....
 call:xnet up "!himset!&action=read&filename=users/alertback.txt"||goto error
 if "!netinfo!"=="ERROR" goto wait
 if "!netinfo!"=="!netinfo_!" goto wait
-start /b mshta vbscript:msgbox("Respond from Daniel - - - > !netinfo!")(window.close)
+start /b mshta vbscript:msgbox("Respond - - - > !netinfo!")(window.close)
 pause>nul
 exit
 
